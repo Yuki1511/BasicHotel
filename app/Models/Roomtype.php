@@ -9,7 +9,7 @@ class Roomtype extends Model
 {
     use HasFactory;
 
-    protected $primaryKey = 'flight_id';
+    protected $primaryKey = 'roomtype_ID';
 
     public $incrementing = false;
 

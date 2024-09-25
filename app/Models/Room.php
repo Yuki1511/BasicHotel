@@ -9,9 +9,9 @@ class Room extends Model
 {
     use HasFactory;
 
-    protected $primaryKey = 'flight_id';
+    protected $primaryKey = 'room_ID'; //主キーカラム名を指定
 
-    public $incrementing = false;
+    public $incrementing = false;  //オートインクリメントにしない
 
-    protected $keyType = 'string';
+    protected $keyType = 'string';  //IDのデータ型をstringに指定
 }

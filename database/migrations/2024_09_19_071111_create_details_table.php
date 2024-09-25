@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id('reservation_details_ID');
             $table->integer('reserve_ID');
             $table->integer('room_ID');
-            $table->string('days');
+            $table->string('days',30);
             $table->integer('price');
             $table->timestamps();
         });
