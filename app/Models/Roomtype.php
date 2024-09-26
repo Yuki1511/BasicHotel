@@ -14,4 +14,5 @@ class Roomtype extends Model
     public $incrementing = false;
 
     protected $keyType = 'string';
+
 }
