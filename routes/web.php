@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// /roomtypeにアクセスされたらRoomtypeControllerのindexメソッドを呼び出せ
+Route::get('/roomtype', 'RoomtypeController@index');
+
+Route::get('/room', 'RoomController@index');
+
+Route::get('/guest', 'GuestController@index');
