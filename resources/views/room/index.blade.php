@@ -6,7 +6,7 @@
     <th>部屋番号</th>
 @foreach ($rooms as $room)
 <tr>
-    <td>{{$room->roomtype_ID}} / {{$room->roomtype->name}}</td>
+    <td>{{$room->roomtype_id}} {{$room->roomtype->name}}</td>
     <td>{{$room->room_Num}}</td>
 </tr>
 @endforeach
