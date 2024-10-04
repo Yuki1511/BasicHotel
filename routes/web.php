@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RoomtypeController;
+use App\Http\Controllers\RoomController;
+use App\Http\Controllers\GuestController;
+use App\Http\Controllers\ReserveController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,8 +22,12 @@ Route::get('/', function () {
 });
 
 // /roomtypeにアクセスされたらRoomtypeControllerのindexメソッドを呼び出せ
-Route::get('/roomtype', 'RoomtypeController@index');
+Route::get('/roomtype', [RoomtypeController::class, 'index']);
 
-Route::get('/room', 'RoomController@index');
+Route::get('/room', [RoomController::class, 'index']);
 
-Route::get('/guest', 'GuestController@index');
+Route::get('/guest', [GuestController::class, 'index']);
+
+Route::get('/reserve', [ReserveController::class, 'index']);
+
+Route::get('/detail', [DetailController::class, 'index']);

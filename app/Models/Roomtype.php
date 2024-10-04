@@ -14,5 +14,8 @@ class Roomtype extends Model
     public $incrementing = false;
 
     protected $keyType = 'string';
-
+//roomsメソッドで定義・・・hasManyメソッドを使用
+    public function rooms() {
+        return $this->hasMany(Room::class);
+    }
 }

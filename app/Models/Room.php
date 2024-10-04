@@ -14,4 +14,8 @@ class Room extends Model
     public $incrementing = false;  //オートインクリメントにしない
 
     protected $keyType = 'string';  //IDのデータ型をstringに指定
+
+    public function roomtype() {
+        return $this->belongsTo(Roomtype::class);
+    }
 }
