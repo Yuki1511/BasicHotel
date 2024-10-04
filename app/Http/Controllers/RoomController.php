@@ -7,10 +7,9 @@ use Illuminate\Http\Request;
 
 class RoomController extends Controller
 {
-    public function index()
-    {
+    public function index(){
         $rooms = Room::all();
 
-        return view('room.index', ['rooms' => $rooms]);
+        return view('room.index', compact('rooms'));
     }
 }
