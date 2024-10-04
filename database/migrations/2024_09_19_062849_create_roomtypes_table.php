@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('max_num_people',100);
             $table->integer('room_value');
             $table->timestamps();
+
         });
     }
 
