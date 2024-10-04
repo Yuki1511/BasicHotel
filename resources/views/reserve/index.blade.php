@@ -3,14 +3,15 @@
 @section('body')
 <table>
     <th>予約ID</th>
-    <th>利用者ID</th>
+    <th>利用者</th>
     <th>人数</th>
     <th>チェックイン</th>
     <th>チェックアウト</th>
 @foreach ($reserves as $reserve)
 <tr>
-    <td>{{$reserve->reserve_ID}}</td>
-    <td>{{$reserve->guest_ID}}</td>
+    <td>{{$reserve->reserve_id}}</td>
+    <td>{{$reserve->guest->name}}</td>
+    <td>{{$reserve->guest->address}}</td>
     <td>{{$reserve->num_people}}</td>
     <td>{{$reserve->check_in}}</td>
     <td>{{$reserve->check_out}}</td>
