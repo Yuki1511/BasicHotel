@@ -14,7 +14,7 @@ class RoomtypesTableSeeder extends Seeder
     public function run(): void
     {
         $param = [
-            'roomtype_ID' => 'B-1',
+            'roomtype_id' => 'B-1',
             'room_name' => 'Basicルーム（ツイン）',
             'max_num_people' => '3',
             'room_value' => '20000',
@@ -22,7 +22,7 @@ class RoomtypesTableSeeder extends Seeder
         DB::table('roomtypes')->insert($param);
         
         $param = [
-            'roomtype_ID' => 'D-1',
+            'roomtype_id' => 'D-1',
             'room_name' => 'デラックスルーム（ツイン）',
             'max_num_people' => '2',
             'room_value' => '40000',
@@ -30,7 +30,7 @@ class RoomtypesTableSeeder extends Seeder
         DB::table('roomtypes')->insert($param);
 
         $param = [
-            'roomtype_ID' => 'P-1',
+            'roomtype_id' => 'P-1',
             'room_name' => 'プレミアムルーム（ツイン）',
             'max_num_people' => '2',
             'room_value' => '50000',

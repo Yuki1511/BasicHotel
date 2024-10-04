@@ -14,45 +14,45 @@ class DetailsTableSeeder extends Seeder
     public function run(): void
     {
         $param = [
-            'reservation_details_ID' => '',
-            'reserve_ID' => '',
-            'room_ID' => '',
+            'reservation_detail_id' => '',
+            'reserve_id' => '',
+            'room_id' => '',
             'days' => '',
             'price' => '',
         ];
         DB::table('reserves')->insert($param);
 
         $param = [
-            'reservation_details_ID' => '',
-            'reserve_ID' => '',
-            'room_ID' => '',
+            'reservation_detail_id' => '',
+            'reserve_id' => '',
+            'room_id' => '',
             'days' => '',
             'price' => '',
         ];
         DB::table('reserves')->insert($param);
 
         $param = [
-            'reservation_details_ID' => '',
-            'reserve_ID' => '',
-            'room_ID' => '',
+            'reservation_detail_id' => '',
+            'reserve_id' => '',
+            'room_id' => '',
             'days' => '',
             'price' => '',
         ];
         DB::table('reserves')->insert($param);
 
         $param = [
-            'reservation_details_ID' => '',
-            'reserve_ID' => '',
-            'room_ID' => '',
+            'reservation_detail_id' => '',
+            'reserve_id' => '',
+            'room_id' => '',
             'days' => '',
             'price' => '',
         ];
         DB::table('reserves')->insert($param);
 
         $param = [
-            'reservation_details_ID' => '',
-            'reserve_ID' => '',
-            'room_ID' => '',
+            'reservation_detail_id' => '',
+            'reserve_id' => '',
+            'room_id' => '',
             'days' => '',
             'price' => '',
         ];

@@ -12,8 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('reserves', function (Blueprint $table) {
-            $table->id('reserve_ID');
-            $table->foreignId('user_ID');
+            $table->id('reserve_id');
+            $table->foreignId('guest_id');
             $table->integer('num_people');
             $table->string('check_in',30);
             $table->string('check_out',30);
