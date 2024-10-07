@@ -16,7 +16,8 @@ class Room extends Model
     protected $keyType = 'string';  //IDのデータ型をstringに指定
 //1対多リレーション
 //Roomtype::class ←モデルを呼び出しているだけ
-    public function roomtype() {
-        return $this->belongsTo(Roomtype::class, 'roomtype_id', 'roomtype_id');
+    public function roomtype() 
+    {
+        return $this->belongsTo(Roomtype::class, 'roomtype_roomtype_id', 'roomtype_id');
     }
 }

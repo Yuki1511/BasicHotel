@@ -11,10 +11,10 @@
 <tr>
     <td>{{$reserve->reserve_id}}</td>
     <td>{{$reserve->guest->name}}</td>
-    <td>{{$reserve->guest->address}}</td>
     <td>{{$reserve->num_people}}</td>
     <td>{{$reserve->check_in}}</td>
     <td>{{$reserve->check_out}}</td>
+    <td>{{$reserve->rooms}}</td>
 </tr>
 @endforeach
 </table>

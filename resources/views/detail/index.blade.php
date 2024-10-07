@@ -2,14 +2,18 @@
 
 @section('body')
 <table>
+    <th>予約明細</th>
+    <th>予約ID</th>
     <th>部屋ID</th>
-    <th>お部屋の種類</th>
-    <th>部屋番号</th>
-@foreach ($rooms as $room)
+    <th>宿泊日</th>
+    <th>宿泊料</th>
+@foreach ($details as $detail)
 <tr>
-    <td>{{$room->room_id}} </td>
-    <td>{{$room->roomtype->room_name}}</td>
-    <td>{{$room->room_Num}}</td>
+    <td>{{$detail->reservation_details_id}}</td>
+    <td>{{$detail->reserve_id}}</td>
+    <td>{{$detail->room_room_id}}</td>
+    <td>{{$detail->days}}</td>
+    <td>{{$detail->price}}</td>
 </tr>
 @endforeach
 </table>

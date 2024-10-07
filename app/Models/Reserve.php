@@ -19,6 +19,6 @@ class Reserve extends Model
     //多対多リレーション
     public function rooms(): BelongsToMany
     {
-        return $this->belongsToMany(Room::class);
+        return $this->belongsToMany(Detail::class, 'details', 'user_id', 'user_id');
     }
 }
