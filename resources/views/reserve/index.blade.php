@@ -7,6 +7,7 @@
     <th>人数</th>
     <th>チェックイン</th>
     <th>チェックアウト</th>
+    <th>宿泊料金</th>
 @foreach ($reserves as $reserve)
 <tr>
     <td>{{$reserve->reserve_id}}</td>
@@ -14,7 +15,9 @@
     <td>{{$reserve->num_people}}</td>
     <td>{{$reserve->check_in}}</td>
     <td>{{$reserve->check_out}}</td>
-    <td>{{$reserve->rooms}}</td>
+    {{-- roomメソッドのbelongsToManyでroomモデルとその中間テーブルdetailテーブルにアクセス。
+    []が配列なので、first=1番目に入っているroom_idみたいすると引っ張ってこれる --}}
+    <td>{{$reserve->rooms->first()->pivot->price}}</td>
 </tr>
 @endforeach
 </table>

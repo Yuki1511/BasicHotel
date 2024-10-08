@@ -9,7 +9,7 @@
     <th>宿泊料</th>
 @foreach ($details as $detail)
 <tr>
-    <td>{{$detail->reservation_details_id}}</td>
+    <td>{{$detail->reservation_detail_id}}</td>
     <td>{{$detail->reserve_id}}</td>
     <td>{{$detail->room_room_id}}</td>
     <td>{{$detail->days}}</td>

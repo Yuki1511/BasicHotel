@@ -19,7 +19,7 @@ class DetailsTableSeeder extends Seeder
             'days' => '2024/10/30',
             'price' => '20000',
         ];
-        DB::table('reserves')->insert($param);
+        DB::table('details')->insert($param);
 
         $param = [
             'reserve_id' => '2',
@@ -27,7 +27,7 @@ class DetailsTableSeeder extends Seeder
             'days' => '2024/10/31',
             'price' => '50000',
         ];
-        DB::table('reserves')->insert($param);
+        DB::table('details')->insert($param);
 
         $param = [
             'reserve_id' => '3',
@@ -35,7 +35,7 @@ class DetailsTableSeeder extends Seeder
             'days' => '2024/11/11',
             'price' => '20000',
         ];
-        DB::table('reserves')->insert($param);
+        DB::table('details')->insert($param);
 
         $param = [
             'reserve_id' => '4',
@@ -43,7 +43,7 @@ class DetailsTableSeeder extends Seeder
             'days' => '2024/11/2',
             'price' => '20000',
         ];
-        DB::table('reserves')->insert($param);
+        DB::table('details')->insert($param);
 
         $param = [
             'reserve_id' => '5',
@@ -51,7 +51,7 @@ class DetailsTableSeeder extends Seeder
             'days' => '2024/12/15',
             'price' => '20000',
         ];
-        DB::table('reserves')->insert($param);
+        DB::table('details')->insert($param);
     }
 }
 
