@@ -5,6 +5,7 @@ use App\Http\Controllers\RoomtypeController;
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\GuestController;
 use App\Http\Controllers\ReserveController;
+use App\Http\Controllers\DetailController;
 
 /*
 |--------------------------------------------------------------------------
