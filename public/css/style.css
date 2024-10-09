@@ -1,0 +1,62 @@
+
+html {
+    font-size: 100%
+}
+
+body {
+    width: auto;
+    margin: 0 15% 0 15%;
+
+}
+
+.font_english {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+header {
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    text-align: center
+}
+
+.navi {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    border-bottom: .5rem double #000;
+}
+
+.main_contents {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 1.5rem
+}
+
+.rooms {
+    display: flex;
+    background-color: #e6f0f0;
+}
+
+
+div p {
+margin: 1rem 25px 1rem 25px;
+}
+
