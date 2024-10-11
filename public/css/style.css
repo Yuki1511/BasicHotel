@@ -1,12 +1,6 @@
-
-html {
-    font-size: 100%
-}
-
-body {
-    width: auto;
-    margin: 0 15% 0 15%;
-
+:root {
+    --main-color: #e6f0f0;
+    --accent-color: #80796c;
 }
 
 .font_english {
@@ -15,8 +9,31 @@ body {
     font-style: italic;
 }
 
-header {
+html {
+    font-size: 100%
+}
 
+body {
+    width: auto;
+    margin: 0 15% 0 15%;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+header {
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 a {
@@ -28,19 +45,24 @@ img {
     max-width: 100%;
 }
 
-li {
+.nav, li {
     list-style: none;
+    font-size: large;
+    color: #fff;
+    margin-top: 10px;
 }
 
 .logo {
     text-align: center
 }
 
-.navi {
+.nav {
     display: flex;
     justify-content: center;
     gap: 3rem;
     border-bottom: .5rem double #000;
+    list-style-type: none;
+    background-color: var(--accent-color);
 }
 
 .main_contents {
@@ -52,11 +74,18 @@ li {
 
 .rooms {
     display: flex;
-    background-color: #e6f0f0;
+    background-color: var(--main-color);
 }
 
-
+div img {
+    margin: 20px 20px;
+    object-fit: cover;
+    width: 100%;
+}
 div p {
-margin: 1rem 25px 1rem 25px;
+    margin: 1rem 25px 1rem 25px;
 }
 
+form {
+    margin: 10px 0 10px 0;
+}

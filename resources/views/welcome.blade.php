@@ -1,3 +1,4 @@
+{{-- @extends('layouts.hotel') --}}
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -21,7 +22,7 @@
         <a href="#" class="logo">
             <h1 class="font_english">Basic Hotel</h1>
         </a>
-        <ul class="navi">
+        <ul class="nav">
             <a href="#">
                 <li>客室</li>
             </a>
@@ -37,12 +38,12 @@
         </ul>
     </header>
     <main>
-        <h4>客室一覧</h4>
+        <h2>客室一覧</h2>
         <div class="main_contents">
             <div class="basic_room rooms">
                 {{-- 次回、写真を挿入 --}}
                 <div class="room_image room_guide">
-                    <a href="#">部屋写真</a>
+                    <img src="{{ asset('images/img_room_deluxe.jpg') }}" alt="客室の写真">
                 </div>
                 <div class="room_guide">
                     <p>Basicルーム</p>
@@ -52,7 +53,7 @@
             </div>
             <div class="deluxe_room rooms">
                 <div class="room_image room_guide">
-                    <a href="">部屋写真</a>
+                    <img src="{{ asset('images/img_room_deluxe.jpg') }}" alt="客室の写真">
                 </div>
                 <div class="room_guide">
                     <p>デラックスルーム</p>
@@ -62,7 +63,7 @@
             </div>
             <div class="premium_room rooms">
                 <div class="room_image room_guide">
-                    <a href="">部屋写真</a>
+                    <img src="{{ asset('images/img_room_deluxe.jpg') }}" alt="客室の写真">
                 </div>
                 <div class="room_guide">
                     <p>プレミアムルーム</p>
@@ -72,7 +73,7 @@
             </div>
         </div>
         <form action="#">
-            <input type="submit" value="予約に進む">
+            <input type="submit" value="予約">
         </form>
     </main>
 

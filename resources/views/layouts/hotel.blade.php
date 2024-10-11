@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BasicHotel</title>
+    <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
+{{-- Googleフォント --}}
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap"
+        rel="stylesheet">
+    <title>Basic Hotel</title>
     <style>
         body {
             coler: #333333;
@@ -30,13 +36,13 @@
 
         .main-nav li {
             margin-left: 36px;
-        }
+        } */
     </style>
 </head>
 
 <body>
     <header>
-        <h1>BasicHotel</h1>
+        <h1 class="font_english">Basic Hotel</h1>
         <nav>
             <ul class="main-nav">
                 <li><a href="/">利用者一覧</a></li>
